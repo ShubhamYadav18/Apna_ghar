@@ -36,12 +36,27 @@ document.addEventListener('DOMContentLoaded', () => {
             // Basic Validation Check
             const name = document.getElementById('name').value;
             const phone = document.getElementById('phone').value;
-            
+
             if (name && phone) {
                 alert(`Thank you, ${name}! We have received your message and will call you at ${phone} shortly.`);
                 contactForm.reset();
             } else {
                 alert('Please fill in the required fields.');
+            }
+        });
+    }
+
+    // Review Form Handler
+    const reviewForm = document.getElementById('review-form');
+    if (reviewForm) {
+        reviewForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('review-name').value;
+            const review = document.getElementById('review-text').value;
+
+            if (name && review) {
+                alert(`Thank you, ${name}! Your review has been submitted for moderation. We appreciate your feedback.`);
+                reviewForm.reset();
             }
         });
     }
