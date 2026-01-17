@@ -47,19 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Review Form Handler
-    const reviewForm = document.getElementById('review-form');
-    if (reviewForm) {
-        reviewForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const name = document.getElementById('review-name').value;
-            const review = document.getElementById('review-text').value;
-
-            if (name && review) {
-                alert(`Thank you, ${name}! Your review has been submitted for moderation. We appreciate your feedback.`);
-                reviewForm.reset();
-            }
-        });
-    }
+    // Review Form Handler is now managed by js/reviews.js
 
     // Scroll Animation (Fade in on scroll)
     const observerOptions = {

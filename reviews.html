@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviews - Dr. Munshilal Yadav</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/reviews.js" defer></script>
 </head>
 
 <body>
@@ -40,33 +41,10 @@
                 <p>See what our satisfied customers have to say about their experience with us.</p>
             </div>
 
-            <div class="grid"
+            <div id="reviews-container" class="grid"
                 style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
-                <div class="card" style="padding: 2rem;">
-                    <div style="color: var(--accent-color); font-size: 1.5rem; margin-bottom: 1rem;">⭐⭐⭐⭐⭐</div>
-                    <p style="font-style: italic; margin-bottom: 1.5rem;">"I bought a plot in Naigaon East through Dr.
-                        Munshilal Yadav developers. The process was completely transparent, and I got the documents
-                        verified easily. Highly recommended!"</p>
-                    <h4 style="margin-bottom: 0;">- Rajesh Sharma</h4>
-                    <span style="font-size: 0.9rem; color: #777;">Plot Owner</span>
-                </div>
-
-                <div class="card" style="padding: 2rem;">
-                    <div style="color: var(--accent-color); font-size: 1.5rem; margin-bottom: 1rem;">⭐⭐⭐⭐⭐</div>
-                    <p style="font-style: italic; margin-bottom: 1.5rem;">"Best builder in Vasai-Virar region. I
-                        purchased a 1BHK flat, and the construction quality is excellent. Delivered on time as
-                        promised."</p>
-                    <h4 style="margin-bottom: 0;">- Sunil Patil</h4>
-                    <span style="font-size: 0.9rem; color: #777;">Flat Support</span>
-                </div>
-
-                <div class="card" style="padding: 2rem;">
-                    <div style="color: var(--accent-color); font-size: 1.5rem; margin-bottom: 1rem;">⭐⭐⭐⭐⭐</div>
-                    <p style="font-style: italic; margin-bottom: 1.5rem;">"Direct dealing with the owner made a huge
-                        difference. Saved brokerage and got a great deal on my shop. Honest people to work with."</p>
-                    <h4 style="margin-bottom: 0;">- Amit Verma</h4>
-                    <span style="font-size: 0.9rem; color: #777;">Shop Owner</span>
-                </div>
+                <!-- Reviews will be loaded here dynamically from js/reviews.js -->
+                <div style="text-align: center; width: 100%; color: #666;">Loading latest reviews...</div>
             </div>
 
             <div class="section-title" style="margin-top: 4rem;">
